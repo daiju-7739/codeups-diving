@@ -1,0 +1,86 @@
+@use "global" as *;
+
+.p-section__header {
+    text-align: center;
+    margin-bottom: rem(24);
+}
+
+.p-section__header--EngTitle {
+    color: $green;
+    font-family: $second-font-family;
+    font-size: rem(32);
+    font-weight: $regular;
+    line-height: 1.25;
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.p-section__header--EngTitle::first-letter {
+    color: $accent;
+}
+
+.p-section__header--JaTitle {
+    color: $accent;
+    font-family: Noto Sans JP;
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: 1.5;
+}
+
+.p-section__button {
+    
+}
+
+.p-section__button--box {
+    display: flex;
+    position: relative;
+    width: rem(202);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: rem(16);
+    padding-left: rem(40);
+    padding-bottom: rem(16);
+    background-color: $accent;
+    z-index: 10;
+}
+
+.p-section__button--box::after {
+    position: absolute;
+    content: "";
+    top: rem(4);
+    left: rem(4);
+    width: 100%;
+    height: 100%;
+    border: 1px solid $accent;
+    z-index: -1;
+}
+
+.p-section__button--text {
+    color: $white;
+    font-size: rem(14);
+    font-family: $second-font-family;
+    font-weight: $normal;
+    line-height: 1.57143;
+}
+
+.p-section__button--box span {
+    position: absolute;
+    background-color: $white;
+    top: rem(26);
+    left: rem(122);
+    width: rem(40);
+    height: rem(1);
+}
+
+.p-section__button--box span:nth-child(1) {
+
+}
+
+.p-section__button--box span:nth-child(2) {
+    top: rem(16);
+    left: rem(158);
+    width: rem(1);
+    height: rem(12);
+    transform: rotate(-45deg); 
+}

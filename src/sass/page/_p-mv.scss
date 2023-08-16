@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-mv {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/common/main-sp_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-mv__inner {
+    
+}
+
+.p-mv__header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: $white;
+    text-align: center;
+}
+
+.p-mv__title {
+    margin-bottom: rem(10);
+    font-family: $third-font-family;
+    font-size: rem(40);
+    font-weight: $normal;
+    line-height: 1;
+    letter-spacing: rem(22);
+}
+
+.p-mv__subtitle {
+    font-family: $second-font-family;
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: 1;
+}

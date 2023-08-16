@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.p-aboutus {
+   margin-top: rem(44);
+   margin-bottom: rem(44);
+   @include mq(md) {
+       
+   }
+}
+
+.p-p-aboutus__inner {
+    padding: 0 rem(30);
+    margin: auto;
+}
+
+.p-aboutus__title {
+
+}
+
+.p-aboutus__items {
+    margin-bottom: rem(50);
+}
+
+.p-aboutus__item--box {
+    position: relative;
+    margin-bottom: rem(40);
+}
+
+.p-aboutus__item--box img:nth-child(1) {
+    position: absolute;
+    width: rem(128);
+}
+
+.p-aboutus__item--box img:nth-child(2) {
+    position: absolute;
+    top: rem(28);
+    right: 0;
+    width: rem(281);
+    z-index: -100;
+}
+
+.p-aboutus__item--title {
+    margin-bottom: rem(16);
+    color: $accent;
+    font-family: $second-font-family;
+    font-size: rem(40);
+    font-weight: $regular;
+    line-height: 1;
+}
+.p-aboutus__item--text {
+    color: $green;
+    font-size: rem(16);
+    line-height: 1.5em;
+}
