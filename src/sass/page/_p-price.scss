@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.p-price {
+    background-color: $subaccent;
+    margin-bottom: rem(80);
+    padding-top: rem(80);
+    padding-bottom: rem(84);
+    @include mq(md) {
+        background-image: url(../images/common/icon-fish_left.png);
+        background-size: 23%;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+}
+
+.p-price__inner {
+    padding: 0 rem(15);
+    margin: auto;
+    @include mq(md) {
+        padding: 0 rem(180);
+    }
+}
+
+.p-price__title {
+
+}
+
+.p-price__items {
+    @include mq(md) {
+        display: flex;
+/*         flex-wrap: wrap;
+ */    }
+}
+
+.p-price__item {
+    @include mq(md) {
+        width: 50%;
+    }
+}
+
+.p-price__item:nth-child(1) {
+    @include mq(md) {
+        margin-right: rem(50);
+    }
+}
+
+.p-price__item:nth-child(2) {
+    @include mq(md) {
+        margin-left: rem(50);
+    }
+}
+
+.p-price__item--pcImg {
+    display: none;
+    @include mq(md) {
+        display: inline-block;
+        position: relative;
+        right: rem(-44);
+        width: 90.74074%;
+    }
+}
+
+.p-price__item--spImg {
+    margin-bottom: rem(40);
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.p-price__item--title {
+    margin-bottom: rem(8);
+    padding-bottom: rem(4);
+    color: $green;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    border-bottom: 1px solid $accent;
+}
+
+.p-price__itemBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(40);
+}
+
+.p-price__itemBox dt {
+    width: 73.333%;
+    margin-bottom: rem(8);
+    color: $green;
+    font-size: rem(14);
+    line-height: 1.71429;
+}
+
+.p-price__itemBox dd {
+    text-align: right;
+    width: 26.667%;
+    margin-bottom: rem(8);
+    color: $green;
+    font-size: rem(14);
+    line-height: 1.71429;
+}

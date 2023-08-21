@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.p-cord {
+
+}
+
+.p-card__img {
+    position: relative;
+}
+
+.p-card__img::before {
+    content: "";
+    display: block;
+    padding-top: 66.966966%;
+}
+
+.p-card__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

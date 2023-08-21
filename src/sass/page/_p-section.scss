@@ -28,6 +28,18 @@
     line-height: 1.5;
 }
 
+.p-section__blog--color {
+    @include mq(md) {
+        color: $white;
+    }
+}
+
+.p-section__blog--color::first-letter {
+    @include mq(md) {
+        color: $white;
+    }
+}
+
 .p-section__button {
     
 }

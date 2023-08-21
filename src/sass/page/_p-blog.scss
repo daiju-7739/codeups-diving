@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.p-blog {
+    margin-bottom: rem(84);
+    @include mq(md) {
+        margin-top: rem(-80);
+        margin-bottom: rem(140);
+        padding-top: rem(26);
+        background-image: url(../images/common/blog-pc_bg.jpg);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.p-blog__inner {
+    width: 100%;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $inner + strip-unit($padding-sp) * 2;
+    @include mq("md") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.p-blog__title {
+
+}
+
+.p-blog__items {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.p-blog__item {
+    margin-bottom: rem(40);
+    padding: rem(16) rem(16);
+    width: 100%;
+    background-color: $white;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+        margin-bottom: rem(80);
+        margin-right: rem(40);
+        width: 33.333333%;
+    }
+}
+
+.p-blog__item:nth-child(3) {
+    @include mq(md) {
+        margin-right: 0;
+    }
+}
+.p-blog__item--date {
+    margin-top: rem(24);
+    margin-left: rem(16);
+    color: $green;
+    font-family: $second-font-family;
+    font-size: rem(12);
+    line-height: 1.5;
+}
+
+.p-blog__item--title {
+    margin-top: rem(4);
+    margin-left: rem(16);
+    margin-right: rem(16);
+    padding-bottom: rem(16);
+    color: $green;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.5;
+    border-bottom: 1px solid $accent;
+}
+
+.p-blog__item--text {
+    margin-top: rem(8);
+    color: $green;
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1.71429;
+}

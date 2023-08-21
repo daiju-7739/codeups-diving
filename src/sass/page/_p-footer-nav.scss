@@ -5,31 +5,50 @@
 }
 
 .p-footer-nav__items {
-    padding: 0 rem(30);
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: rem(15);
+    margin-right: rem(15);
+    @include mq(md) {
+        margin-left: rem(180);
+        margin-right: rem(180);
+    }
 }
 
 .p-footer-nav__item {
     color: $white;
+    width: 50%;
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.p-footer-nav__item dt {
+.p-footer-nav__itemBox {
+    @include mq(md) {
+        width: 50%;
+    }
+}
+
+.p-footer-nav__itemBox dt {
     margin-bottom: rem(24);
     padding-left: rem(22);
     background-image: url(../images/common/icon-starfish.png);
-    background-size: contain;
+    background-size: 10.46511%;
+    background-position: top left;
     background-repeat: no-repeat;
-    font-family: $base-font-family;
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.125;
+    @include mq(md) {
+        background-size: 6.66666%;
+    }
 }
 
-.p-footer-nav__item dd {
+.p-footer-nav__itemBox dd {
     margin-bottom: rem(24);
     padding-left: rem(22);
-    font-family: $base-font-family;
     font-size: rem(16);
-    font-weight: $regular;
+    /* font-weight: $regular; */
     line-height: 1.125;
 }

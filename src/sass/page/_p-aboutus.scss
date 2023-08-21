@@ -8,9 +8,8 @@
    }
 }
 
-.p-p-aboutus__inner {
-    padding: 0 rem(30);
-    margin: auto;
+.p-aboutus__inner {
+
 }
 
 .p-aboutus__title {
@@ -21,21 +20,32 @@
     margin-bottom: rem(50);
 }
 
-.p-aboutus__item--box {
+.p-aboutus__itemBox {
     position: relative;
     margin-bottom: rem(40);
 }
 
-.p-aboutus__item--box img:nth-child(1) {
-    position: absolute;
-    width: rem(128);
+.p-aboutus__itemBox::before {
+    content: "";
+    display: block;
+    padding-top: 62.68567%;
 }
 
-.p-aboutus__item--box img:nth-child(2) {
+.p-aboutus__itemBox--01 {
     position: absolute;
-    top: rem(28);
+    top: 0;
+    left: 0;
+    width: 37.13333%;
+    object-fit: cover;
+    z-index: 100;
+}
+
+.p-aboutus__itemBox--02 {
+    position: absolute;
+    bottom: 0;
     right: 0;
-    width: rem(281);
+    width: 81.397727%;
+    object-fit: cover;
     z-index: -100;
 }
 
@@ -50,5 +60,5 @@
 .p-aboutus__item--text {
     color: $green;
     font-size: rem(16);
-    line-height: 1.5em;
+    line-height: 1.5;
 }
