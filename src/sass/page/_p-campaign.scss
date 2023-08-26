@@ -15,12 +15,20 @@
 
 .p-campaign__items {
     margin-bottom: rem(40);
+    @include mq(md) {
+        display: flex;
+        margin-bottom: rem(80);
+    }
 }
 
-.p-campaign__item {
+.swiper-slide {
     width: rem(280);
     background-color: $white;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    @include mq(md) {
+        margin-right: rem(40);
+        width: rem(333);
+    }
 }
 
 .p-campaign__item--categori {
@@ -33,6 +41,9 @@
     color: $accent;
     font-size: rem(12);
     line-height: 1.83333;
+    @include mq(md) {
+        margin-top: rem(24);
+    }
 }
 
 .p-campaign__item--title {
@@ -54,12 +65,18 @@
     font-size: rem(14);
     font-weight: $regular;
     line-height: 1.71429;
+    @include mq(md) {
+        margin-top: rem(16);
+    }
 }
 
 .p-campaign__item--price {
     text-align: center;
     margin-top: rem(8);
     padding-bottom: rem(24);
+    @include mq(md) {
+        padding-bottom: rem(40);
+    }
 }
 
 .p-campaign__item--price span {
@@ -67,7 +84,7 @@
     font-family: $third-font-family;
     font-size: rem(20);
     font-weight: $bold;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .p-campaign__item--price span:nth-child(1) {

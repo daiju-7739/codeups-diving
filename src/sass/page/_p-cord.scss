@@ -12,6 +12,9 @@
     content: "";
     display: block;
     padding-top: 66.966966%;
+    @include mq(md) {
+        /* padding-top: 50%; */
+    }
 }
 
 .p-card__img img {

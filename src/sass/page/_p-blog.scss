@@ -3,13 +3,38 @@
 .p-blog {
     margin-bottom: rem(84);
     @include mq(md) {
-        margin-top: rem(-80);
+        position: relative;
+        margin-top: rem(-100);
         margin-bottom: rem(140);
         padding-top: rem(26);
         background-image: url(../images/common/blog-pc_bg.jpg);
         background-position: top left;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+.p-blog__imgA {
+    display: none;
+    @include mq(md) {
+        display: inline-block;
+        position: absolute;
+        top: 2.5%;
+        left: 7.6%;
+        width: 30.348%;
+        z-index: 9000;
+    }
+}
+
+.p-blog__imgB {
+    display: none;
+    @include mq(md) {
+        display: inline-block;
+        position: absolute;
+        bottom: -20%;
+        left: 8.5%;
+        width: 20.903%;
+        z-index: 9999;
     }
 }
 
@@ -21,13 +46,16 @@
     margin-left: auto;
     max-width: $inner + strip-unit($padding-sp) * 2;
     @include mq("md") {
+        margin-top: rem(74);
         padding-right: $padding-pc;
         padding-left: $padding-pc;
     }
 }
 
 .p-blog__title {
-
+    @include mq(md) {
+        margin-bottom: rem(76);
+    }
 }
 
 .p-blog__items {

@@ -4,7 +4,8 @@
    margin-top: rem(44);
    margin-bottom: rem(44);
    @include mq(md) {
-       
+    margin-top: rem(140);
+    margin-bottom: rem(140);
    }
 }
 
@@ -18,20 +19,43 @@
 
 .p-aboutus__items {
     margin-bottom: rem(50);
+    @include mq(md) {
+        position: relative;
+    }
+}
+.p-aboutus__items--img {
+    display: none;
+    @include mq(md) {
+        display: inline-block;
+        position: absolute;
+        bottom: rem(-90);
+        right: rem(-97);
+        width: 18.836%;
+        z-index: 9999;
+    }
 }
 
-.p-aboutus__itemBox {
+.p-aboutus__item {
     position: relative;
     margin-bottom: rem(40);
+    @include mq(md) {
+        
+    }
 }
 
-.p-aboutus__itemBox::before {
+.p-aboutus__item:nth-child(1) {
+    @include mq(md) {
+        /* position: static; */
+    }
+}
+
+.p-aboutus__item:nth-child(1)::before {
     content: "";
     display: block;
     padding-top: 62.68567%;
 }
 
-.p-aboutus__itemBox--01 {
+.p-aboutus__item--imgA {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,13 +64,35 @@
     z-index: 100;
 }
 
-.p-aboutus__itemBox--02 {
+.p-aboutus__item--imgB {
     position: absolute;
-    bottom: 0;
+    top: rem(26);
     right: 0;
     width: 81.397727%;
     object-fit: cover;
     z-index: -100;
+    @include mq(md) {
+        top: rem(80);
+    }
+}
+
+.p-aboutus__item:nth-child(2) {
+    @include mq(md) {
+        display: flex;
+        position: absolute;
+        top: rem(200);
+        left: rem(180);
+        z-index: 200;
+/*         width: 1000px;
+        height: 600px;
+ */    }
+}
+
+.p-aboutus__item--box {
+    @include mq(md) {
+        width: 50%;
+        margin-right: rem(40);
+    }
 }
 
 .p-aboutus__item--title {
@@ -56,9 +102,17 @@
     font-size: rem(40);
     font-weight: $regular;
     line-height: 1;
+    @include mq(md) {
+        font-size: rem(80);
+        color: $white;
+    }
 }
 .p-aboutus__item--text {
+    margin-bottom: rem(50);
     color: $green;
     font-size: rem(16);
     line-height: 1.5;
+    @include mq(md) {
+        color: $white;
+    }
 }

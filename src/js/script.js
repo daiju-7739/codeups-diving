@@ -35,5 +35,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  var swiper = new Swiper(".js-campaign-swiper", {
+    slidesPerView: 1,
+    breakpoints: {
+      // 768px以上の場合
+      768: {
+        slidesPerView: 3
+      }
+    },
+    spaceBetween: 40,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 });

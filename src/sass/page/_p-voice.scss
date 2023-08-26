@@ -2,6 +2,21 @@
 
 .p-voice {
     margin-bottom: rem(80);
+    @include mq(md) {
+        position: relative;
+    }
+}
+
+.p-voice__img {
+    display: none;
+    @include mq(md) {
+        display: inline-block;
+        position: absolute;
+        bottom: -10%;
+        right: 0;
+        width: 6.894%;
+        z-index: 9999;
+    }
 }
 
 .p-voice__inner {
