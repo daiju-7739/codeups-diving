@@ -1,20 +1,24 @@
 @use "global" as *;
 
 .p-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: rem(80);
     background: rgba(13, 41, 54, 0.68);
     z-index: 1000;
-    position: fixed;
-    width: 100%;
-
+    @include mq(md) {
+        height: rem(90);
+    }
 }
 
 .p-header__inner {
-    height: inherit;
     display: flex;
+    padding: 0 rem(15);
+    height: inherit;
     justify-content: space-between;
     align-items: center;
-    padding: 0 rem(15);
     @include mq(md) {
         padding: 0 rem(30);
     }
@@ -24,11 +28,22 @@
     height: inherit;
     display: flex;
     align-items: center;
-    z-index: 50;
+    z-index: 9999;
+    @include mq(md) {
+        width: rem(133);
+    }
 }
 
 .p-header__drawer {
     @include mq(md) {
         display: none;
+    }
+}
+
+.p-header__pc-nav {
+    height: inherit;
+    display: none;
+    @include mq(md) {
+        display: block;
     }
 }

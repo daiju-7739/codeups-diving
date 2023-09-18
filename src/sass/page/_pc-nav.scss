@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.pc-nav {
+
+}
+
+.pc-nav.is-active {
+    /* display: block; */
+}
+
+.pc-nav__inner {
+    margin-left: rem(15);
+    margin-right: rem(15);
+}
+
+.pc-nav__items {
+
+}
+
+.pc-nav__item {
+    display: flex;
+    color: $white;
+    text-align: center;
+}
+
+.pc-nav__item dt {
+    margin-top: rem(26);
+    margin-right: rem(40);
+    font-family: $second-font-family;
+    font-size: rem(18);
+    line-height: 1;
+}
+
+.pc-nav__item dt:nth-child(8) {
+    margin-right: 0;
+}
+
+.pc-nav__item dt span {
+    margin-bottom: rem(27);
+    font-size: rem(10);
+    line-height: 1.5;
+}
+
+.pc-nav__item dt a {
+    display: block;
+    padding: rem(10) 0;
+}

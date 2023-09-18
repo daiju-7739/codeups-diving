@@ -29,6 +29,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
 
   <body>
@@ -44,6 +46,23 @@
           <span></span>
           <span></span>
         </div>
+        <nav class="p-header__pc-nav pc-nav is-active">
+          <div class="pc-nav__inner">
+            <dl class="pc-nav__items">
+              <div class="pc-nav__item">
+                <dt><a href="#">Campaign<br /><span>キャンペーン</span></a></dd>
+                <dt><a href="#">About us<br /><span>私たちについて</span></a></dd> 
+                <dt><a href="#">Information<br /><span>ダイビング情報</span></a></dd>
+                <dt><a href="#">Blog<br /><span>ブログ</span></a></dd> 
+                <dt><a href="#">Voice<br /><span>お客様の声</span></a></dt>
+                <dt><a href="#">Price<br /><span>料金一覧</span></a></dt>
+                <dt><a href="#">FAQ<br /><span>よくある質問</span></a></dt>
+                <dt><a href="#">Contact<br /><span>お問合せ</span></a></dt>
+              </div>
+            </dl>
+          </div>
+        </nav>
+
         <nav class="p-header__sp-nav sp-nav js-sp-nav">
           <div class="sp-nav__inner">
             <dl class="sp-nav__items">
@@ -73,11 +92,48 @@
             </dl>
           </div>
         </nav>
+
       </div>
     </header>
 
     <section class="l-mv p-mv">
       <div class="p-mv__inner">
+        <dl>
+          <dt>
+            <div class="p-mv__items">
+              <div class="p-mv__item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="../assets/images/common/main_01-left.jpg">
+                    <img src="../assets/images/common/main-sp_01.jpg" alt="">
+                </picture>
+              </div>
+              <div class="p-mv__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="../assets/images/common/main_01-right.jpg">
+                  <img src="../assets/images/common/main-sp_01.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+          </dt>
+          <dt>
+            <picture>
+              <source media="(min-width: 768px)" srcset="../assets/images/common/main_02.jpg">
+              <img src="../assets/images/common/main-sp_02.jpg" alt="">
+            </picture>
+          </dt>
+          <dt>
+            <picture>
+              <source media="(min-width: 768px)" srcset="../assets/images/common/main_03.jpg">
+              <img src="../assets/images/common/main-sp_03.jpg" alt="">
+            </picture>
+          </dt>
+          <dt>
+            <picture>
+              <source media="(min-width: 768px)" srcset="../assets/images/common/main_04.jpg">
+              <img src="../assets/images/common/main-sp_04.jpg" alt="">
+            </picture>
+          </dt>
+        </dl>
         <div class="p-mv__header">
           <h2 class="p-mv__title">
             DIVING
@@ -89,136 +145,132 @@
       </div>
     </section>
 
-    <div class="l-inner">
-      <section class="l-campaign p-campaign">
-        <div class="p-campaign__inner">
-          <div class="p-campaign__title p-section__header">
-            <h2 class="p-section__header--EngTitle">Campaign</h2>
-            <p class="p-section__header--JaTitle">キャンペーン</p>
-          </div>
-          <div class="p-campaign__items">
-            <div class="swiper js-campaign-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="p-campaign__item p-card">
-                    <div class="p-card__img">
-                      <img src="../assets/images/common/campaign_01.jpg" alt="">
-                    </div>
-                    <p class="p-campaign__item--categori">体験ダイビング</p>
-                    <p class="p-campaign__item--title">貸切体験ダイビング</p>
-                    <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
-                    <p class="p-campaign__item--price">
-                      <span>¥24,000</span>
-                      <span>¥18,000</span>
-                    </p>
+    <section class="l-campaign p-campaign">
+      <div class="p-campaign__inner l-inner">
+        <div class="p-campaign__title p-section__header">
+          <h2 class="p-section__header--EngTitle">Campaign</h2>
+          <p class="p-section__header--JaTitle">キャンペーン</p>
+        </div>
+        <div class="p-campaign__items">
+          <div class="swiper js-campaign-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-campaign__item p-card">
+                  <div class="p-card__img">
+                    <img src="../assets/images/common/campaign_01.jpg" alt="">
                   </div>
+                  <p class="p-campaign__item--categori">体験ダイビング</p>
+                  <p class="p-campaign__item--title">貸切体験ダイビング</p>
+                  <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
+                  <p class="p-campaign__item--price">
+                    <span>¥24,000</span>
+                    <span>¥18,000</span>
+                  </p>
                 </div>
-                <div class="swiper-slide">
-                  <div class="p-campaign__item p-card">
-                    <div class="p-card__img">
-                      <img src="../assets/images/common/campaign_02.jpg" alt="">
-                    </div>
-                    <p class="p-campaign__item--categori">ライセンス講習</p>
-                    <p class="p-campaign__item--title">ライセンス取得</p>
-                    <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
-                    <p class="p-campaign__item--price">
-                      <span>¥56,000</span>
-                      <span>¥46,000</span>
-                    </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-campaign__item p-card">
+                  <div class="p-card__img">
+                    <img src="../assets/images/common/campaign_02.jpg" alt="">
                   </div>
+                  <p class="p-campaign__item--categori">ライセンス講習</p>
+                  <p class="p-campaign__item--title">ライセンス取得</p>
+                  <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
+                  <p class="p-campaign__item--price">
+                    <span>¥56,000</span>
+                    <span>¥46,000</span>
+                  </p>
                 </div>
-                <div class="swiper-slide">
-                  <div class="p-campaign__item p-card">
-                    <div class="p-card__img">
-                      <img src="../assets/images/common/campaign_03.jpg" alt="">
-                    </div>
-                    <p class="p-campaign__item--categori">体験ダイビング</p>
-                    <p class="p-campaign__item--title">ナイトダイビング</p>
-                    <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
-                    <p class="p-campaign__item--price">
-                      <span>¥10,000</span>
-                      <span>¥8,000</span>
-                    </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-campaign__item p-card">
+                  <div class="p-card__img">
+                    <img src="../assets/images/common/campaign_03.jpg" alt="">
                   </div>
+                  <p class="p-campaign__item--categori">体験ダイビング</p>
+                  <p class="p-campaign__item--title">ナイトダイビング</p>
+                  <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
+                  <p class="p-campaign__item--price">
+                    <span>¥10,000</span>
+                    <span>¥8,000</span>
+                  </p>
                 </div>
-                <div class="swiper-slide">
-                  <div class="p-campaign__item p-card">
-                    <div class="p-card__img">
-                      <img src="../assets/images/common/campaign_04.jpg" alt="">
-                    </div>
-                    <p class="p-campaign__item--categori">ファンダイビング</p>
-                    <p class="p-campaign__item--title">貸切ファンダイビング</p>
-                    <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
-                    <p class="p-campaign__item--price">
-                      <span>¥20,000</span>
-                      <span>¥16,000</span>
-                    </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-campaign__item p-card">
+                  <div class="p-card__img">
+                    <img src="../assets/images/common/campaign_04.jpg" alt="">
                   </div>
+                  <p class="p-campaign__item--categori">ファンダイビング</p>
+                  <p class="p-campaign__item--title">貸切ファンダイビング</p>
+                  <p class="p-campaign__item--text">全部コミコミ(お一人様)</p>
+                  <p class="p-campaign__item--price">
+                    <span>¥20,000</span>
+                    <span>¥16,000</span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-section__button">
-          <a href="#">
-            <div class="p-section__button--box">
-              <p class="p-section__button--text">View more</p>
-              <span></span>
-              <span></span>
-            </div>
-          </a>
-        </div>
-      </section>
-    </div>
+      </div>
+      <div class="p-section__button">
+        <a href="#">
+          <div class="p-section__button--box">
+            <p class="p-section__button--text">View more</p>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </section>
 
-    <div class="l-inner">
-      <section class="l-aboutus p-aboutus">
-        <div class="p-aboutus__inner">
-          <div class="p-aboutus__title p-section__header">
-            <h2 class="p-section__header--EngTitle">About us</h2>
-            <p class="p-section__header--JaTitle">私たちについて</p>
-          </div>
-          <div class="p-aboutus__items">
-            <div class="p-aboutus__item">
-              <!-- <div class="p-aboutus__itemBox"> -->
-                <img src="../assets/images/common/aboutus_01.jpg" alt="" class="p-aboutus__item--imgA">
-                <img src="../assets/images/common/aboutus_02.jpg" alt="" class="p-aboutus__item--imgB">
-              <!-- </div> -->
-            </div>
-            <div class="p-aboutus__item">
-              <div class="p-aboutus__item--box">
-                <p class="p-aboutus__item--title">Dive into<br>the Ocean</p>
-              </div>
-              <div class="p-aboutus__item--box">
-                <p class="p-aboutus__item--text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                </p>
-                <div class="p-section__button">
-                  <a href="#">
-                    <div class="p-section__button--box">
-                      <p class="p-section__button--text">View more</p>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <img src="../assets/images/common/icon-sango.png" alt="" class="p-aboutus__items--img">
-          </div>
+    <section class="l-aboutus p-aboutus">
+      <div class="p-aboutus__inner l-inner">
+        <div class="p-aboutus__title p-section__header">
+          <h2 class="p-section__header--EngTitle">About us</h2>
+          <p class="p-section__header--JaTitle">私たちについて</p>
         </div>
-      </section>
-    </div>
+        <div class="p-aboutus__items">
+          <div class="p-aboutus__item">
+            <div class="p-aboutus__itemBox">
+              <img src="../assets/images/common/aboutus_01.jpg" alt="" class="p-aboutus__item--imgA">
+              <img src="../assets/images/common/aboutus_02.jpg" alt="" class="p-aboutus__item--imgB">
+            </div>
+          </div>
+          <div class="p-aboutus__item">
+            <div class="p-aboutus__item--box">
+              <p class="p-aboutus__item--title">Dive into<br>the Ocean</p>
+            </div>
+            <div class="p-aboutus__item--box">
+              <p class="p-aboutus__item--text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+              </p>
+              <div class="p-section__button">
+                <a href="#">
+                  <div class="p-section__button--box">
+                    <p class="p-section__button--text">View more</p>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="../assets/images/common/icon-sango.png" alt="" class="p-aboutus__items--img">
+        </div>
+      </div>
+    </section>
 
     <section class="l-information p-information">
-      <div class="p-information__inner">
+      <div class="p-information__inner l-inner">
         <div class="p-information__title p-section__header">
           <h2 class="p-section__header--EngTitle">Information</h2>
           <p class="p-section__header--JaTitle">ダイビング情報</p>
         </div>
         <div class="p-information__items">
-          <div class="p-information__item">
+          <div class="p-information__item colorbox">
             <img src="../assets/images/common/information_01.jpg" alt="">
           </div>
           <div class="p-information__item">
@@ -242,7 +294,7 @@
     </section>
 
     <section class="l-blog p-blog">
-      <div class="p-blog__inner">
+      <div class="p-blog__inner l-inner">
         <div class="p-blog__title p-section__header">
           <h2 class="p-section__header--EngTitle p-section__blog--color">Blog</h2>
           <p class="p-section__header--JaTitle p-section__blog--color">ブログ</p>
@@ -290,63 +342,61 @@
       <img src="../assets/images/common/icon-fish_right.png" alt="" class="p-blog__imgB">      </section>
     </section>
 
-    <div class="l-inner">
-      <section class="l-voice p-voice">
-        <div class="p-voice__inner">
-          <div class="p-voice__title p-section__header">
-            <h2 class="p-section__header--EngTitle">Voice</h2>
-            <p class="p-section__header--JaTitle">お客様の声</p>
+    <section class="l-voice p-voice">
+      <div class="p-voice__inner l-inner">
+        <div class="p-voice__title p-section__header">
+          <h2 class="p-section__header--EngTitle">Voice</h2>
+          <p class="p-section__header--JaTitle">お客様の声</p>
+        </div>
+        <div class="p-voice__items">
+          <div class="p-voice__item">
+            <div class="p-voice__itemBox">
+              <div class="p-voice__itemBox--left">
+                <p class="p-voice__itemBox--customer">20代(女性)</p>
+                <p class="p-voice__itemBox--categori">ライセンス講習</p>
+                <p class="p-voice__itemBox--title">ここにタイトルが入ります。ここにタイトル</p>
+              </div>
+              <div class="p-voice__itemBox--right">
+                <img src="../assets/images/common/voice_01.jpg" alt="">
+              </div>
+            </div>
+            <p class="p-voice__item--text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+            </p>
           </div>
-          <div class="p-voice__items">
-            <div class="p-voice__item">
-              <div class="p-voice__itemBox">
-                <div class="p-voice__itemBox--left">
-                  <p class="p-voice__itemBox--customer">20代(女性)</p>
-                  <p class="p-voice__itemBox--categori">ライセンス講習</p>
-                  <p class="p-voice__itemBox--title">ここにタイトルが入ります。ここにタイトル</p>
-                </div>
-                <div class="p-voice__itemBox--right">
-                  <img src="../assets/images/common/voice_01.jpg" alt="">
-                </div>
+          <div class="p-voice__item">
+            <div class="p-voice__itemBox">
+              <div class="p-voice__itemBox--left">
+                <p class="p-voice__itemBox--customer">20代(男性)</p>
+                <p class="p-voice__itemBox--categori">ファンダイビング</p>
+                <p class="p-voice__itemBox--title">ここにタイトルが入ります。ここにタイトル</p>
               </div>
-              <p class="p-voice__item--text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-              </p>
-            </div>
-            <div class="p-voice__item">
-              <div class="p-voice__itemBox">
-                <div class="p-voice__itemBox--left">
-                  <p class="p-voice__itemBox--customer">20代(男性)</p>
-                  <p class="p-voice__itemBox--categori">ファンダイビング</p>
-                  <p class="p-voice__itemBox--title">ここにタイトルが入ります。ここにタイトル</p>
-                </div>
-                <div class="p-voice__itemBox--right">
-                  <img src="../assets/images/common/voice_02.jpg" alt="">
-                </div>
+              <div class="p-voice__itemBox--right">
+                <img src="../assets/images/common/voice_02.jpg" alt="">
               </div>
-              <p class="p-voice__item--text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-              </p>
             </div>
+            <p class="p-voice__item--text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+            </p>
           </div>
         </div>
-        <div class="p-section__button">
-          <a href="#">
-            <div class="p-section__button--box">
-              <p class="p-section__button--text">View more</p>
-              <span></span>
-              <span></span>
-            </div>
-          </a>
-        </div>
-        <img src="../assets/images/common/icon-dragonspawn.png" alt="" class="p-voice__img">
-      </section>
-    </div>
+      </div>
+      <div class="p-section__button">
+        <a href="#">
+          <div class="p-section__button--box">
+            <p class="p-section__button--text">View more</p>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+      <img src="../assets/images/common/icon-dragonspawn.png" alt="" class="p-voice__img">
+    </section>
 
     <section class="l-price p-price">
-      <div class="p-price__inner">
+      <div class="p-price__inner l-inner">
         <div class="p-price__title p-section__header">
           <h2 class="p-section__header--EngTitle">Price</h2>
           <p class="p-section__header--JaTitle">料金一覧</p>
@@ -410,7 +460,7 @@
     </section>
 
     <section class="l-contact p-contact">
-      <div class="p-contact__inner">
+      <div class="p-contact__inner l-inner">
         <img src="../assets/images/common/icon-fish_left.png" alt="" class="p-contact__inner--img">
         <div class="p-contact__items">
           <div class="p-contact__item">

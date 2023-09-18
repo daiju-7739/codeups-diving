@@ -11,11 +11,11 @@
 }
 
 .p-information__inner {
-    padding: 0 rem(15);
-    margin: auto;
+    /* padding: 0 rem(15); */
+    /* margin: auto; */
     @include mq(md) {
-        padding-left: rem(180);
-        padding-right: rem(180);
+        /* padding-left: rem(180);
+        padding-right: rem(180); */
     }
 }
 
