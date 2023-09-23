@@ -40,7 +40,7 @@
 
 .p-footer__item--logo {
     margin-bottom: rem(16);
-    width: 35.945%;
+    width: 34.945%;
     @include mq(md) {
         margin-right: rem(40);
         width: 83.75%;
@@ -66,7 +66,7 @@
 
 .p-footer__copyright {
     text-align: center;
-    margin-top: rem(40);
+    margin-top: rem(16);
     color: $white;
     font-family: $second-font-family;
     font-size: rem(12);

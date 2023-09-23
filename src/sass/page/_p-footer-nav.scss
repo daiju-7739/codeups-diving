@@ -24,6 +24,13 @@
     }
 }
 
+.p-footer-nav__item:nth-child(2) {
+    margin-left: rem(12);
+    width: 45%;
+    @include mq(md){
+    }
+}
+
 .p-footer-nav__itemBox {
     @include mq(md) {
         width: 50%;
@@ -43,6 +50,14 @@
     @include mq(md) {
         background-size: 6.66666%;
     }
+}
+
+.p-footer-nav__itemBox dt.end {
+    margin-bottom: rem(40);
+}
+
+.p-footer-nav__itemBox dd.end {
+    margin-bottom: rem(40);
 }
 
 .p-footer-nav__itemBox dd {

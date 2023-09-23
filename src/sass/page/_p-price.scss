@@ -6,9 +6,11 @@
     padding-top: rem(80);
     padding-bottom: rem(84);
     @include mq(md) {
+        padding-top: rem(93);
+        padding-bottom: rem(102);
         background-image: url(../images/common/icon-fish_left.png);
-        background-size: 23%;
-        background-position: bottom left;
+        background-size: 30.5%;
+        background-position: bottom rem(58) left rem(100);
         background-repeat: no-repeat;
     }
 }
@@ -17,6 +19,7 @@
     padding: 0 rem(15);
     margin: auto;
     @include mq(md) {
+        margin-bottom: rem(78);
         padding: 0 rem(180);
     }
 }
@@ -28,12 +31,13 @@
 .p-price__items {
     @include mq(md) {
         display: flex;
-/*         flex-wrap: wrap;
- */    }
+    }
 }
 
 .p-price__item {
+    margin-top: rem(-2);
     @include mq(md) {
+        padding-top: rem(3);
         width: 50%;
     }
 }
@@ -55,8 +59,7 @@
     @include mq(md) {
         display: inline-block;
         position: relative;
-        right: rem(-44);
-        width: 90.74074%;
+        width: 100%;
     }
 }
 
@@ -80,7 +83,7 @@
 .p-price__itemBox {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(40);
+    margin-bottom: rem(32);
 }
 
 .p-price__itemBox dt {

@@ -24,8 +24,7 @@
 }
 
 .pc-nav__item dt {
-    margin-top: rem(26);
-    margin-right: rem(40);
+    margin-right: rem(1);
     font-family: $second-font-family;
     font-size: rem(18);
     line-height: 1;
@@ -43,5 +42,5 @@
 
 .pc-nav__item dt a {
     display: block;
-    padding: rem(10) 0;
+    padding: rem(25) rem(18);
 }
