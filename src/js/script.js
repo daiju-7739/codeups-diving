@@ -49,6 +49,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       el: ".swiper-pagination",
       clickable: true,
     },
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    },
   });
 
   //要素の取得とスピードの設定

@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: $green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+    display: none;
+    @include mq(md) {
+        display: block;
+        top: rem(28);
+        right: rem(0);
+        width: rem(80);
+        height: rem(80);
+        background-color: #FFF;
+        border: 1px solid $accent;
+        border-radius: 100%;
+    }
+}
+
+.swiper-button-next span {
+    position: absolute;
+    background-color: $accent;
+    top: rem(40);
+    left: rem(15);
+    width: rem(50);
+    height: rem(1);
+}
+
+.swiper-button-next span:nth-child(1) {
+
+}
+
+.swiper-button-next span:nth-child(2) {
+    top: rem(30);
+    left: rem(60);
+    width: rem(1);
+    height: rem(12);
+    transform: rotate(-45deg);
+}
+
+.swiper-button-prev {
+    display: none;
+    @include mq(md) {
+        display: block;
+        top: rem(28);
+        left: rem(840);
+        width: rem(80);
+        height: rem(80);
+        background-color: #FFF;
+        border: 1px solid $accent;
+        border-radius: 100%;
+    }
+}
+
+.swiper-button-prev span {
+    position: absolute;
+    background-color: $accent;
+    top: rem(40);
+    left: rem(15);
+    width: rem(50);
+    height: rem(1);
+}
+
+.swiper-button-prev span:nth-child(1) {
+
+}
+
+.swiper-button-prev span:nth-child(2) {
+    top: rem(30);
+    left: rem(20);
+    width: rem(1);
+    height: rem(12);
+    transform: rotate(45deg);
+}
+

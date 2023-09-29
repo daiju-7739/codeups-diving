@@ -17,7 +17,14 @@
     margin-bottom: rem(8);
     @include mq(md) {
         display: flex;
+        margin-top: rem(-110);
         margin-bottom: rem(51);
+    }
+}
+
+.swiper {
+    @include mq(md) {
+        padding-top: rem(110);
     }
 }
 
