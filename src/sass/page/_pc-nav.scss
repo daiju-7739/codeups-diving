@@ -17,6 +17,7 @@
 }
 
 .pc-nav__item {
+    padding-right: rem(5);
     display: flex;
     color: $white;
     text-align: center;
@@ -41,7 +42,7 @@
 
 .pc-nav__item dt a {
     display: block;
-    padding: rem(25) rem(19) 0 rem(19);
+    padding: rem(25) rem(18) 0 rem(18);
     letter-spacing: rem(0.5);
 }
 

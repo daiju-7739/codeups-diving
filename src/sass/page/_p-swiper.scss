@@ -11,8 +11,8 @@
     display: none;
     @include mq(md) {
         display: block;
-        top: rem(28);
-        right: rem(0);
+        top: 5.3%;
+        right: 0;
         width: rem(80);
         height: rem(80);
         background-color: #FFF;
@@ -46,8 +46,8 @@
     display: none;
     @include mq(md) {
         display: block;
-        top: rem(28);
-        left: rem(840);
+        top: 5.3%;
+        left: 78%;
         width: rem(80);
         height: rem(80);
         background-color: #FFF;

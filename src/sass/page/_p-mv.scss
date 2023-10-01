@@ -108,8 +108,8 @@
 
 .p-mv__header {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 49.4%;
+    left: 50.2%;
     transform: translateY(-50%) translateX(-50%);
     color: $white;
     text-align: center;
@@ -126,7 +126,7 @@
 }
 
 .p-mv__title {
-    margin-bottom: rem(4);
+    margin-bottom: rem(3);
     font-family: $third-font-family;
     font-size: rem(40);
     font-weight: $normal;

@@ -1,19 +1,19 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-    let topBtn = $('.c-to-top');
-    topBtn.hide();
-  
-    // ボタンの表示設定
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 70) {
-        // 指定px以上のスクロールでボタンを表示
-        topBtn.fadeIn();
-      } else {
-        // 画面が指定pxより上ならボタンを非表示
-        topBtn.fadeOut();
-      }
-    });
+  let topBtn = $('.c-to-top');
+  topBtn.hide();
+
+  // ボタンの表示設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
+  });
 
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
@@ -40,7 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     breakpoints: {
       // 768px以上の場合
       768: {
-        slidesPerView: 3
+        slidesPerView: 3,
       }
     },
     spaceBetween: 40,
@@ -71,7 +71,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //inviewを使って背景色が画面に現れたら処理をする
       color.on('inview', function(){
         if(counter == 0){
-    　　　　　$(this).delay(200).animate({'width':'100%'},speed,function(){
+          $(this).delay(200).animate({'width':'100%'},speed,function(){
                   image.css('opacity','1');
                   $(this).css({'left':'0' , 'right':'auto'});
                   $(this).animate({'width':'0%'},speed);

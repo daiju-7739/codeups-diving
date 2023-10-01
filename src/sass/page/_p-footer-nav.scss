@@ -37,6 +37,12 @@
     }
 }
 
+.p-footer-nav__itemBox:nth-child(2) {
+    @include mq(md) {
+        padding-left: rem(16);
+    }
+}
+
 .p-footer-nav__itemBox dt {
     margin-bottom: rem(24);
     padding-left: rem(22);
@@ -48,7 +54,7 @@
     font-weight: $bold;
     line-height: 1.125;
     @include mq(md) {
-        background-size: 6.66666%;
+        background-size: contain;
     }
 }
 

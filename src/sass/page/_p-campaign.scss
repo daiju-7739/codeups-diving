@@ -4,9 +4,14 @@
  }
 
 .p-campaign__inner {
-    padding: 0 rem(20);
+    padding-left: rem(20);
+    padding-right: rem(20);
     padding-bottom: rem(20);
     margin: auto;
+    @include mq(md) {
+        padding-left: rem(0);
+        padding-right: rem(0);
+    }
 }
 
 .p-campaign__title {
