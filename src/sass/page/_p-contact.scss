@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.p-contact {
+.contact {
     @include mq(md) {
     }
 }
 
-.p-contact__inner {
+.contact__inner {
     margin-top: rem(-23);
     margin-bottom: rem(105);
     padding-top: rem(26);
@@ -22,7 +22,7 @@
     }
 }
 
-.p-contact__inner--img {
+.contact__inner--img {
     display: none;
     @include mq(md) {
         display: inline-block;
@@ -33,7 +33,7 @@
     }
 }
 
-.p-contact__items {
+.contact__items {
     @include mq(md) {
         display: flex;
         position: relative;
@@ -45,7 +45,7 @@
     }
 }
 
-.p-contact__item {
+.contact__item {
     margin-bottom: rem(40);
     @include mq(md) {
         margin-top: rem(72);
@@ -53,21 +53,21 @@
     }
 }
 
-.p-contact__item:nth-child(1) {
+.contact__item:nth-child(1) {
     @include mq(md) {
         width: 53%;
         border-right: 1px solid $accent;
     }
 }
 
-.p-contact__item:nth-child(2) {
+.contact__item:nth-child(2) {
     @include mq(md) {
         padding-right: rem(35);
         width: 47%;
     }
 }
 
-.p-contact__item--title {
+.contact__item--title {
     margin-bottom: rem(6);
     padding-left: rem(25);
     padding-right: rem(25);
@@ -82,21 +82,21 @@
     }
 }
 
-.p-contact__item--title h2 {
+.contact__item--title h2 {
     display: none;
 }
 
-.p-contact__item--title img {
+.contact__item--title img {
     display: inline-block;
     width: 57%;
-    filter: drop-shadow(1px 3px 3px rgb(150, 150, 150));
+    filter: droshadow(1px 3px 3px rgb(150, 150, 150));
     @include mq(md) {
         width: 90%;
         max-width: 200px;
     }
     }
 
-.p-contact__item--titleBorder {
+.contact__item--titleBorder {
     margin-top: rem(2);
     padding-bottom: rem(1);
     width: 100%;
@@ -104,7 +104,7 @@
     box-shadow: 1px 5px 5px rgb(230, 230, 230);
 }
 
-.p-contact__item--text {
+.contact__item--text {
     margin-bottom: rem(4);
     font-size: rem(16);
     line-height: 1.5;
@@ -114,7 +114,7 @@
     }
 }
 
-.p-contact__item--box {
+.contact__item--box {
     @include mq(md) {
         display: flex;
         margin-left: rem(50);
@@ -123,14 +123,14 @@
     }
 }
 
-.p-contact__item--boxA {
+.contact__item--boxA {
     @include mq(md) {
         padding-top: rem(7);
         width: 31%;
     }
 }
 
-.p-contact__item--boxB {
+.contact__item--boxB {
     padding-left: rem(25);
     padding-right: rem(25);
     @include mq(md) {
@@ -140,7 +140,7 @@
     }
 }
 
-.p-contact__item--mapBox {
+.contact__item--mapBox {
     display: block;
     margin-top: rem(12);
     margin-bottom: rem(40);
@@ -153,39 +153,39 @@
     }
 }
 
-.p-contact__EngTitle {
+.contact__EngTitle {
     margin-bottom: rem(-6);
     color: $green;
     font-family: $second-font-family;
     font-size: rem(80);
     line-height: 1;
-    filter: drop-shadow(1px 3px 3px rgb(150, 150, 150));
+    filter: droshadow(1px 3px 3px rgb(150, 150, 150));
     @include mq(md) {
         margin-top: rem(28);
         font-size: rem(79);
     }
 }
 
-.p-contact__EngTitle::first-letter {
+.contact__EngTitle::first-letter {
     color: $accent;
 }
-.p-contact__JaTitle {
+.contact__JaTitle {
     margin-bottom: rem(13);
     color: $accent;
     font-size: rem(12);
     line-height: 1;
-    filter: drop-shadow(1px 3px 3px rgb(150, 150, 150));
+    filter: droshadow(1px 3px 3px rgb(150, 150, 150));
     @include mq(md) {
         margin-top: rem(4);
     }
 }
 
-.p-contact__SubTitle {
+.contact__SubTitle {
     margin-bottom: rem(41);
     color: $accent;
     font-size: rem(14);
     line-height: 1;
-    filter: drop-shadow(1px 3px 3px rgb(150, 150, 150));
+    filter: droshadow(1px 3px 3px rgb(150, 150, 150));
     @include mq(md) {
         margin-top: rem(4);
     }

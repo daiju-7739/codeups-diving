@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.p-footer-nav {
+.footer-nav {
 
 }
 
-.p-footer-nav__items {
+.footer-nav__items {
     display: flex;
     flex-wrap: wrap;
     margin-left: rem(15);
@@ -15,7 +15,7 @@
     }
 }
 
-.p-footer-nav__item {
+.footer-nav__item {
     color: $white;
     width: 50%;
     @include mq(md){
@@ -24,26 +24,26 @@
     }
 }
 
-.p-footer-nav__item:nth-child(2) {
+.footer-nav__item:nth-child(2) {
     margin-left: rem(12);
     width: 45%;
     @include mq(md){
     }
 }
 
-.p-footer-nav__itemBox {
+.footer-nav__itemBox {
     @include mq(md) {
         width: 50%;
     }
 }
 
-.p-footer-nav__itemBox:nth-child(2) {
+.footer-nav__itemBox:nth-child(2) {
     @include mq(md) {
         padding-left: rem(16);
     }
 }
 
-.p-footer-nav__itemBox dt {
+.footer-nav__itemBox dt {
     margin-bottom: rem(24);
     padding-left: rem(22);
     background-image: url(../images/common/icon-starfish.png);
@@ -58,15 +58,15 @@
     }
 }
 
-.p-footer-nav__itemBox dt.end {
+.footer-nav__itemBox dt.end {
     margin-bottom: rem(40);
 }
 
-.p-footer-nav__itemBox dd.end {
+.footer-nav__itemBox dd.end {
     margin-bottom: rem(40);
 }
 
-.p-footer-nav__itemBox dd {
+.footer-nav__itemBox dd {
     margin-bottom: rem(24);
     padding-left: rem(22);
     font-size: rem(16);

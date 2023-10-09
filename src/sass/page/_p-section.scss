@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-section__header {
+.section__header {
     text-align: center;
     margin-bottom: rem(23);
     @include mq(md) {
@@ -8,7 +8,7 @@
     }
 }
 
-.p-section__header--EngTitle {
+.section__header--EngTitle {
     color: $green;
     font-family: $second-font-family;
     font-size: rem(32);
@@ -19,11 +19,11 @@
     }
 }
 
-.p-section__header--EngTitle::first-letter {
+.section__header--EngTitle::first-letter {
     color: $accent;
 }
 
-.p-section__header--JaTitle {
+.section__header--JaTitle {
     color: $accent;
     font-family: Noto Sans JP;
     font-size: rem(12);
@@ -31,23 +31,23 @@
     line-height: 2.4;
 }
 
-.p-section__blog--color {
+.section__blog--color {
     @include mq(md) {
         color: $white;
     }
 }
 
-.p-section__blog--color::first-letter {
+.section__blog--color::first-letter {
     @include mq(md) {
         color: $white;
     }
 }
 
-.p-section__button {
+.section__button {
     
 }
 
-.p-section__button--box {
+.section__button--box {
     display: flex;
     position: relative;
     width: rem(202);
@@ -60,7 +60,7 @@
     z-index: 10;
 }
 
-.p-section__button--box::after {
+.section__button--box::after {
     position: absolute;
     content: "";
     top: rem(4);
@@ -71,7 +71,7 @@
     z-index: -1;
 }
 
-.p-section__button--text {
+.section__button--text {
     color: $white;
     font-size: rem(14);
     font-family: $second-font-family;
@@ -79,7 +79,7 @@
     line-height: 1.57143;
 }
 
-.p-section__button--box span {
+.section__button--box span {
     position: absolute;
     background-color: $white;
     top: rem(26);
@@ -88,11 +88,11 @@
     height: rem(1);
 }
 
-.p-section__button--box span:nth-child(1) {
+.section__button--box span:nth-child(1) {
 
 }
 
-.p-section__button--box span:nth-child(2) {
+.section__button--box span:nth-child(2) {
     top: rem(16);
     left: rem(158);
     width: rem(1);
@@ -100,7 +100,7 @@
     transform: rotate(-45deg); 
 }
 
-.p-to-top {
+.to-top {
     position: fixed;
     right: rem(14);
     bottom: rem(100);
@@ -113,7 +113,7 @@
     }
 }
 
-.p-to-top a {
+.to-top a {
     display: block;
     width: rem(48);
     height: rem(48);
@@ -124,7 +124,7 @@
     }
 }
 
-.p-to-top a span {
+.to-top a span {
     position: absolute;
     background-color: $accent;
     top: rem(23);
@@ -140,11 +140,11 @@
     }
 }
 
-.p-to-top a span:nth-child(1) {
+.to-top a span:nth-child(1) {
 
 }
 
-.p-to-top a span:nth-child(2) {
+.to-top a span:nth-child(2) {
     top: rem(12);
     left: rem(15);
     width: rem(10);

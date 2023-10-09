@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-footer {
+.footer {
     background-color: $accent;
     padding-top: rem(48);
     padding-bottom: rem(56);
@@ -9,12 +9,12 @@
     }
 }
 
-.p-footer__inner {
+.footer__inner {
     padding: 0 rem(30);
     margin: auto;
 }
 
-.p-footer__items {
+.footer__items {
     display: flex;
     flex-wrap: wrap;
     margin-left: rem(15);
@@ -27,7 +27,7 @@
     }
 }
 
-.p-footer__item {
+.footer__item {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,7 @@
     }
 }
 
-.p-footer__item--logo {
+.footer__item--logo {
     margin-bottom: rem(16);
     width: 34.945%;
     @include mq(md) {
@@ -47,7 +47,7 @@
     }
 }
 
-.p-footer__item--sns {
+.footer__item--sns {
     width: 15.008%;
     margin-right: rem(16);
     @include mq(md) {
@@ -58,13 +58,13 @@
     }
 }
 
-.p-footer__item--sns:nth-child(2) {
+.footer__item--sns:nth-child(2) {
     @include mq(md) {
         left: 20%;
     }
 }
 
-.p-footer__copyright {
+.footer__copyright {
     text-align: center;
     margin-top: rem(16);
     color: $white;

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-voice {
+.voice {
     margin-bottom: rem(84);
     @include mq(md) {
         position: relative;
@@ -8,7 +8,7 @@
     }
 }
 
-.p-voice__img {
+.voice__img {
     display: none;
     @include mq(md) {
         display: inline-block;
@@ -20,15 +20,15 @@
     }
 }
 
-.p-voice__inner {
+.voice__inner {
     margin-bottom: rem(33);
 }
 
-.p-voice__title {
+.voice__title {
     margin-bottom: 36px;
 }
 
-.p-voice__items {
+.voice__items {
     @include mq(md) {
         display: flex;
         margin-top: rem(-10);
@@ -36,7 +36,7 @@
      }
 }
 
-.p-voice__item {
+.voice__item {
     margin-bottom: rem(42);
     padding: rem(15) rem(16) rem(21) rem(16);
     width: 100%;
@@ -51,30 +51,30 @@
     }
 }
 
-.p-voice__item:nth-child(1) {
+.voice__item:nth-child(1) {
     @include mq(md) {
         margin-right: rem(20);
     }
 }
 
-.p-voice__item:nth-child(2) {
+.voice__item:nth-child(2) {
     @include mq(md) {
         margin-left: rem(20);
     }
 }
 
-.p-voice__itemBox {
+.voice__itemBox {
     display: flex;
 }
 
-.p-voice__itemBox--left {
+.voice__itemBox--left {
     width: 51.755%;
     @include mq(md) {
         width: 61.9%;
     }
 }
 
-.p-voice__itemBox--right {
+.voice__itemBox--right {
     margin-top: rem(10);
     width: 48.245%;
     @include mq(md) {
@@ -83,7 +83,7 @@
     }
 }
 
-.p-voice__itemBox--boxTitle {
+.voice__itemBox--boxTitle {
     @include mq(md) {
         padding-right: rem(16);
         display: flex;
@@ -92,7 +92,7 @@
     }
 }
 
-.p-voice__itemBox--customer {
+.voice__itemBox--customer {
     color: $green;
     font-size: rem(12);
     line-height: 1.5;
@@ -103,7 +103,7 @@
     }
 }
 
-.p-voice__itemBox--categori {
+.voice__itemBox--categori {
     display: inline-flex;
     padding: rem(3) rem(12);
     align-items: flex-start;
@@ -118,7 +118,7 @@
     }
 }
 
-.p-voice__itemBox--title {
+.voice__itemBox--title {
     margin-top: rem(4);
     margin-right: rem(13);
     padding-bottom: rem(6);
@@ -136,7 +136,7 @@
     }
 }
 
-.p-voice__item--text {
+.voice__item--text {
     margin-top: rem(15);
     font-size: rem(16);
     line-height: 1.5;

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-information {
+.information {
     background-color: $subaccent;
     margin-bottom: rem(80);
     padding-top: rem(80);
@@ -12,7 +12,7 @@
     }
 }
 
-.p-information__inner {
+.information__inner {
     /* padding: 0 rem(15); */
     /* margin: auto; */
     @include mq(md) {
@@ -21,18 +21,18 @@
     }
 }
 
-.p-information__title {
+.information__title {
 
 }
 
-.p-information__items {
+.information__items {
     @include mq(md) {
         display: flex;
         /* flex-wrap: wrap; */
     }
 }
 
-.p-information__item {
+.information__item {
     margin-bottom: rem(24);
     @include mq(md) {
         margin-bottom: 0;
@@ -40,14 +40,14 @@
     }
 }
 
-.p-information__item:nth-child(2) {
+.information__item:nth-child(2) {
     @include mq(md) {
         padding-top: rem(59);
         padding-left: rem(48);
     }
 }
 
-.p-information__item img {
+.information__item img {
     top: 50%;
     left: 50%;
     margin-bottom: rem(24);
@@ -58,7 +58,7 @@
     }
 }
 
-.p-information__item--title {
+.information__item--title {
     margin-bottom: rem(5);
     padding-bottom: rem(1);
     color: $green;
@@ -72,7 +72,7 @@
         font-size: rem(24);
     }
 }
-.p-information__item--text {
+.information__item--text {
     color: $green;
     font-size: rem(16);
     line-height: 1.58;

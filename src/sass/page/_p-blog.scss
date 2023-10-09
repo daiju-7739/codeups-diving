@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-blog {
+.blog {
     margin-bottom: rem(84);
     @include mq(md) {
         position: relative;
@@ -14,7 +14,7 @@
     }
 }
 
-.p-blog__imgA {
+.blog__imgA {
     display: none;
     @include mq(md) {
         display: inline-block;
@@ -26,7 +26,7 @@
     }
 }
 
-.p-blog__imgB {
+.blog__imgB {
     display: none;
     @include mq(md) {
         display: inline-block;
@@ -38,7 +38,7 @@
     }
 }
 
-.p-blog__inner {
+.blog__inner {
     width: 100%;
     padding-right: $padding-sp;
     padding-left: $padding-sp;
@@ -52,20 +52,20 @@
     }
 }
 
-.p-blog__title {
+.blog__title {
     @include mq(md) {
         margin-bottom: rem(76);
     }
 }
 
-.p-blog__items {
+.blog__items {
     @include mq(md) {
         display: flex;
         margin-top: rem(70);
     }
 }
 
-.p-blog__item {
+.blog__item {
     margin-bottom: rem(40);
     padding: rem(16) rem(23) rem(25) rem(21);
     width: 100%;
@@ -79,12 +79,12 @@
     }
 }
 
-.p-blog__item:nth-child(3) {
+.blog__item:nth-child(3) {
     @include mq(md) {
         margin-right: 0;
     }
 }
-.p-blog__item--date {
+.blog__item--date {
     margin-top: rem(24);
     color: $green;
     font-family: $second-font-family;
@@ -92,7 +92,7 @@
     line-height: 1.5;
 }
 
-.p-blog__item--title {
+.blog__item--title {
     margin-top: rem(1);
     margin-right: rem(16);
     padding-bottom: rem(3);
@@ -106,7 +106,7 @@
     }
 }
 
-.p-blog__item--text {
+.blog__item--text {
     margin-top: rem(14);
     color: $green;
     font-size: rem(16);

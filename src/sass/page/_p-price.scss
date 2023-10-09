@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-price {
+.price {
     background-color: $subaccent;
     margin-bottom: rem(80);
     padding-top: rem(80);
@@ -15,7 +15,7 @@
     }
 }
 
-.p-price__inner {
+.price__inner {
     padding: 0 rem(15);
     margin: auto;
     @include mq(md) {
@@ -24,17 +24,17 @@
     }
 }
 
-.p-price__title {
+.price__title {
 
 }
 
-.p-price__items {
+.price__items {
     @include mq(md) {
         display: flex;
     }
 }
 
-.p-price__item {
+.price__item {
     margin-top: rem(-2);
     @include mq(md) {
         margin-top: rem(-1);
@@ -42,13 +42,13 @@
     }
 }
 
-.p-price__item:nth-child(1) {
+.price__item:nth-child(1) {
     @include mq(md) {
         margin-right: rem(48);
     }
 }
 
-.p-price__item:nth-child(2) {
+.price__item:nth-child(2) {
     display: none;
     @include mq(md) {
         display: block;
@@ -56,7 +56,7 @@
     }
 }
 
-.p-price__item--pcImg {
+.price__item--pcImg {
     @include mq(md) {
         display: inline-block;
         position: relative;
@@ -64,14 +64,14 @@
     }
 }
 
-.p-price__item--spImg {
+.price__item--spImg {
     margin-bottom: rem(40);
     @include mq(md) {
         display: none;
     }
 }
 
-.p-price__item--title {
+.price__item--title {
     margin-bottom: rem(8);
     padding-bottom: rem(4);
     color: $green;
@@ -81,7 +81,7 @@
     border-bottom: 1px solid $accent;
 }
 
-.p-price__itemBox {
+.price__itemBox {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: rem(30);
@@ -90,7 +90,7 @@
     }
 }
 
-.p-price__itemBox dt {
+.price__itemBox dt {
     width: 73.333%;
     margin-bottom: rem(8);
     color: $green;
@@ -101,7 +101,7 @@
     }
 }
 
-.p-price__itemBox dd {
+.price__itemBox dd {
     text-align: right;
     width: 26.667%;
     margin-bottom: rem(8);

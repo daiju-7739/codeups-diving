@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.p-cord {
+.cord {
 
 }
 
-.p-card__img {
+.card__img {
     position: relative;
 }
 
-.p-card__img::before {
+.card__img::before {
     content: "";
     display: block;
     padding-top: 66.966966%;
@@ -17,7 +17,7 @@
     }
 }
 
-.p-card__img img {
+.card__img img {
     position: absolute;
     top: 50%;
     left: 50%;
