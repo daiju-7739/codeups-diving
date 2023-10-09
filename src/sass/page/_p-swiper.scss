@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.swiper {
+    width: 100%;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: $green;
