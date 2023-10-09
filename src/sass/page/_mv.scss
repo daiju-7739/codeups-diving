@@ -13,6 +13,13 @@
     }
 }
 
+.mv {
+    margin-bottom: rem(40);
+     @include mq(md) {
+        margin-bottom: rem(115);
+    }
+}
+
 .mv__inner {
     position: relative;
     top: 0;
@@ -23,6 +30,7 @@
 .mv dt {
     position: absolute;
     width: 100%;
+    height: 100vh;
     opacity: 0;
     animation-name: mv__changeImg;
     animation-duration: 40s;

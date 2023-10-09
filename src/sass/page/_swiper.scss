@@ -2,7 +2,18 @@
 
 .swiper {
     width: 100%;
+    @include mq(md) {
+        padding-top: rem(110);
+    }
 }
+
+.swiper-slide {
+    padding-bottom: rem(10);
+    @include mq(md) {
+        margin-right: rem(40);
+    }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: $green;

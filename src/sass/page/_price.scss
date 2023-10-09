@@ -24,10 +24,6 @@
     }
 }
 
-.price__title {
-
-}
-
 .price__items {
     @include mq(md) {
         display: flex;
@@ -44,7 +40,7 @@
 
 .price__item:nth-child(1) {
     @include mq(md) {
-        margin-right: rem(48);
+        margin-right: rem(96);
     }
 }
 
@@ -52,7 +48,7 @@
     display: none;
     @include mq(md) {
         display: block;
-        margin-left: rem(48);
+        margin-left: rem(0);
     }
 }
 

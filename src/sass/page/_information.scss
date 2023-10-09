@@ -21,10 +21,6 @@
     }
 }
 
-.information__title {
-
-}
-
 .information__items {
     @include mq(md) {
         display: flex;
