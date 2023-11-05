@@ -3,6 +3,7 @@
 .aboutus {
    margin-bottom: rem(73);
    @include mq(md) {
+    position: relative;
     margin-bottom: rem(123);
    }
 }
@@ -19,8 +20,8 @@
         display: inline-block;
         position: absolute;
         bottom: rem(-73);
-        right: rem(-97);
-        width: 17.836%;
+        right: rem(40);
+        width: 12.836%;
         z-index: 9999;
     }
 }
